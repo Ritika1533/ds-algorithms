@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+bool LinearSearch(int *arr, int n, int key)
+{
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == key)
+            return true;
+    }
+    return false;
+}
+
+int main()
+{
+    int arr[] = {1, 2, 3, 9, 6, 4, 77};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int key;
+    cout << "enter the element to be searched : " << endl;
+    cin >> key;
+    bool ans = LinearSearch(arr, n, key);
+    if (ans == 1)
+    {
+        cout << "found the element" << endl;
+    }
+    else
+    {
+        cout << "not found the element" << endl;
+    }
+}
+/*time Complexity
+   best case : O(1)
+   worst case O(n)
+*/

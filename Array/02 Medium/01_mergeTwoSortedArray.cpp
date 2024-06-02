@@ -30,7 +30,7 @@ void mergeTwoSortedArray(int *arr1, int *arr2, int *arr3, int size1, int size2)
     // o(size2-index2) : worst case =>index2=0
     // o(size2)
 }
-// OVERALL TIME COMPLEXITY : O()
+// OVERALL TIME COMPLEXITY : O(size1+size2);
 void printArray(int *arr, int n)
 {
     for (int i = 0; i < n; i++)

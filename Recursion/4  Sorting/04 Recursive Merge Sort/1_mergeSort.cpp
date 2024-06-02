@@ -44,6 +44,8 @@ void merge(int *arr, int s, int e)
     {
         arr[k++] = second[index2++];
     }
+    delete[] first;
+    delete[] second;
 }
 void mergeSort(int *arr, int s, int e)
 {
@@ -75,3 +77,4 @@ int main()
     mergeSort(arr, 0, size - 1);
     printArray(arr, size);
 }
+// time complexity : O(n log n)

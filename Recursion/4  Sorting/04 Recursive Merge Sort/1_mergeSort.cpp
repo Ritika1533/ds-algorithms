@@ -75,6 +75,7 @@ int main()
     int size = sizeof(arr) / sizeof(arr[0]);
     printArray(arr, size);
     mergeSort(arr, 0, size - 1);
+    //
     printArray(arr, size);
 }
 // time complexity : O(n log n)

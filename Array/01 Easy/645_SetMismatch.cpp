@@ -1,20 +1,25 @@
-//https://leetcode.com/problems/set-mismatch/description/
+// https://leetcode.com/problems/set-mismatch/description/
 #include <iostream>
 #include <vector>
 using namespace std;
-class Solution {
+class Solution
+{
 public:
-    vector<int> findErrorNums(vector<int>& nums) {
+    vector<int> findErrorNums(vector<int> &nums)
+    {
         int n = nums.size();
         vector<bool> seen(n, false);
         vector<int> ans(2);
         int sum = 0;
         int duplicate = -1;
-
-        for (int i = 0; i < n; ++i) {
-            if (seen[nums[i] - 1]) {
+        for (int i = 0; i < n; ++i)
+        {
+            if (seen[nums[i] - 1])
+            {
                 duplicate = nums[i];
-            } else {
+            }
+            else
+            {
                 seen[nums[i] - 1] = true;
                 sum += nums[i];
             }

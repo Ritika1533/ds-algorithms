@@ -2,7 +2,7 @@
 using namespace std;
 int factorial(int n)
 {
-    // Base case
+    // Base Case
     if (n == 1)
         return 1;
     return n * factorial(n - 1);

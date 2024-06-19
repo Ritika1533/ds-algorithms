@@ -7,7 +7,7 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-// brute force tc : o(m+n) sc:O(n)
+// brute force tc : o(m+n) sc:O(n)0
 class Solution
 {
 public:
@@ -44,7 +44,7 @@ public:
  *     int val;
  *     ListNode *next;
  *     ListNode(int x) : val(x), next(NULL) {}
- * };
+ * }
  */
 class Solution
 {

@@ -1,4 +1,4 @@
-//  https://leetcode.com/problems/set-mismatch/description/
+// https://leetcode.com/problems/set-mismatch/description/
 #include <iostream>
 #include <vector>
 using namespace std;

@@ -1,4 +1,4 @@
-//   https://leetcode.com/problems/find-common-characters/description/
+//  https://leetcode.com/problems/find-common-characters/description/
 #include <iostream>
 #include <vector>
 #include <string>

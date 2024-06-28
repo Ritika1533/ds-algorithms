@@ -1,6 +1,6 @@
-//  https://leetcode.com/problems/find-missing-and-repeated-values/description/
+//   https://leetcode.com/problems/find-missing-and-repeated-values/description/
 #include <iostream>
-#include <vector>
+#in clude <vector>
 #include <string>
 #include <unordered_map>
 using namespace std;

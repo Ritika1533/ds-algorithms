@@ -1,3 +1,4 @@
+
 // LONGEST SUMARRAY WITH K SUM
 // OPTIMAL --> it is for both positive and negative
 int lenOfLongSubarr(int A[], int N, int K)

@@ -22,3 +22,27 @@ public:
         return maxlength;
     }
 };
+
+// Longest Substring Without Repeating Characters-->optimal
+
+class Solution
+{
+public:
+    int lengthOfLongestSubstring(string s)
+    {
+        int l = 0, r = 0, maxlength = 0;
+        int hash[256] = {0};
+        while (r < s.size())
+        {
+            hash[s[r]]++;
+            while (hash[s[r]] > 1)
+            {
+                hash[s[l]]--;
+                l++;
+            }
+            maxlength = max(maxlength, r - l + 1);
+            r++;
+        }
+        return maxlength;
+    }
+};

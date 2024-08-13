@@ -24,7 +24,7 @@ public:
     }
 };
 
-// Moves Zeros -->OPTIMAL
+// Moves Zeros  -->OPTIMAL
 class Solution
 {
 public:

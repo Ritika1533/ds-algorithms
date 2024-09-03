@@ -19,7 +19,7 @@ int main()
     cout << "enter a decimal number to conver into binary" << endl;
     cin >> x;
     string ans = binaryConversion(x);
-    ans.reserve();
+    // ans.reserve();
     cout << "binary converstion of " << x << " is " << endl;
     cout << ans;
     return 0;

@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/minimum-bit-flips-to-convert-number/
+
 class Solution
 {
 public:
@@ -5,9 +7,9 @@ public:
     {
         int ans = start ^ goal;
         int count = 0;
-        while (ans > 0)
+        while (ans != 0)
         {
-            ans = ans & ans - 1;
+            ans = ans & (ans - 1);
             count++;
         }
         return count;

@@ -5,17 +5,16 @@ public:
     vector<string> findRelativeRanks(vector<int> &score)
     {
         int n = score.size();
-        vector<string> ans(n);
-        vector<int> scoreCopy = score;
-        unordered_map<int, int> mp;
+        unordered_map<int, int> mpp;
         for (int i = 0; i < n; i++)
         {
-            mp[scoreCopy[i]] = i;
+            mpp[score[i]] = i;
         }
-        sort(scoreCopy.begin(), scoreCopy.end(), greater<int>());
+        sort(score.begin(), score.end(), greater<int>());
+        vector<string> ans(n);
         for (int i = 0; i < n; i++)
         {
-            int originalIndex = mp[scoreCopy[i]];
+            int originalIndex = mpp[score[i]];
             if (i == 0)
                 ans[originalIndex] = "Gold Medal";
             else if (i == 1)

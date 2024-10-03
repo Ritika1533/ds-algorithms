@@ -13,6 +13,7 @@ public:
         }
         return num;
     }
+    
     bool isHappy(int n)
     {
         set<int> st;
